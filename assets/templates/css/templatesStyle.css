@@ -105,6 +105,8 @@ header{
     height: 121.97px;
     object-fit: cover;
     cursor: pointer;
+    margin-bottom: 48px;
+    margin-top: 16px;
 }
 
 .menu{
