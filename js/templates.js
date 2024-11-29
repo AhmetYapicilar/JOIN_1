@@ -69,3 +69,21 @@ function showMenuBar() {
 function openLogIn() {
   window.location.href = "Login.html";
 }
+
+function openPrivacyPolicy(){
+  if(user === null || user === 'Guest'){
+    user = 'Guest';}
+  window.location.href = "privacypolicy.html?user=" + user;
+}
+
+function openLegalNotice(){
+  if(user === null || user === 'Guest'){
+    user = 'Guest';}
+  window.location.href = "legalnotice.html?user=" + user;
+}
+
+function openHelp(){
+  if(user === null || user === 'Guest'){
+    user = 'Guest';}
+  window.location.href = "help.html?user=" + user;
+}

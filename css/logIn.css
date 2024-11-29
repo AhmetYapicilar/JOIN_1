@@ -2,6 +2,7 @@ body {
     margin: 0px;
     font-family: "Inter";
     background-color: rgb(230, 228, 228);
+    overflow: hidden;
 }
 
 button {
@@ -286,6 +287,10 @@ select {
     cursor: pointer;
 }
 
+.signup-div-responsive{
+    display: none;
+}
+
 
 .privacyPolicyLegalNotice {
     font-size: 20px;
@@ -509,6 +514,41 @@ select {
         width: 90%;
         margin-right: 5%;
     }
+
+    .notAJoinUser{
+        display: none;
+    }
+
+    .signup-div-responsive{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+    position: relative;
+    width: auto;
+    gap: 8px;
+    height: 50px;
+    top: 6%;
+    justify-content: space-around;
+    }
+
+    .notAJoinUserText{
+        font-size: 16px;
+        width: auto;
+    }
+
+    .notAJoinUserButtonResponsive{
+        background-color: rgb(42, 54, 71);
+    color: white;
+    width: 88px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    gap: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    }
 }
 
 @media (max-width: 470px) {
@@ -549,12 +589,13 @@ select {
     }
 
     .privacyPolicyLegalNotice {
-        font-size: 20px;
+        font-size: 16px;
         display: flex;
         position: relative;
         height: 35px;
+        width: auto;
         top: 12%;
-        justify-content: space-around;
+        gap: 8px;
         scale: 0.9;
     }
 }

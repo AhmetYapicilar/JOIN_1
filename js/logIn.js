@@ -128,6 +128,7 @@ function getTime() {
  * Logs in the user as a guest and redirects to the summary page.
  */
 function guestLogIn() {
+  console.log("Guest login function triggered");
   // Setze den Benutzer explizit als "Guest" im lokalen Speicher
   localStorage.setItem("user-name", JSON.stringify("Guest"));
 
