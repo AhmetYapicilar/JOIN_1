@@ -70,20 +70,25 @@ function openLogIn() {
   window.location.href = "Login.html";
 }
 
-function openPrivacyPolicy(){
+function openPrivacyPolicy(event){
+  event.preventDefault(); // Verhindert das Standardverhalten von href="#"
   if(user === null || user === 'Guest'){
     user = 'Guest';}
-  window.location.href = "privacypolicy.html?user=" + user;
+  window.location.href = "privacyPolicy.html?user=" + user;
 }
 
-function openLegalNotice(){
+function openLegalNotice(event){
+  event.preventDefault(); // Verhindert das Standardverhalten von href="#"
   if(user === null || user === 'Guest'){
     user = 'Guest';}
-  window.location.href = "legalnotice.html?user=" + user;
+  window.location.href = "legalNotice.html?user=" + user;
 }
 
-function openHelp(){
+function openHelp(event){
+  event.preventDefault(); // Verhindert das Standardverhalten von href="#"
   if(user === null || user === 'Guest'){
     user = 'Guest';}
   window.location.href = "help.html?user=" + user;
 }
+
+

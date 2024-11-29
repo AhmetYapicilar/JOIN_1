@@ -1,3 +1,35 @@
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: #F6F7F8;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: #D5D6D7;
+}
+
+*::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #2A3647;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #597296;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #29ABE2;
+}
+
 body {
     background-color: #F6F7F8;
     font-family: 'Inter';
@@ -8,6 +40,8 @@ body {
     padding-top: 206px;
     padding-left: 328px;
     padding-right: 164px;
+    height: 70vh;
+    overflow-y: auto;
 }
 
 .width-100percent {

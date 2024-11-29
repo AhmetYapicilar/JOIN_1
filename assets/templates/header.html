@@ -2,14 +2,13 @@
   <a onclick="openSummary()" href="#" rel="noopener noreferrer"><img class="JoinLogoHeaderImg" src="assets/img/JoinLogoMobile.png"></a>
   <span class="headline">Kanban Project Management Tool</span>
   <div class="center fixed-width-104">
-    <a onclick="openHelp()" href="#" class="help-link">Help<img class="help-icon" src="./assets/img/help-icon.png"></a>
     <div onclick="showMenuBar()" class="circle"><span id="initials"></span></div>
   </div>
 </header>
 
 <div id="help-menu-bar" class="help-click d-none">
-  <a onclick="openHelp()" href="#" class="help-link">Help<img class="help-icon" src="./assets/img/help-icon.png"></a>
-  <a onclick="openLegalNotice()" href="#" id="navLN" class="help-link">Legal Notice</a>
-  <a onclick="openPrivacyPolicy()" href="#" id="navPP" class="help-link">Privacy Policy</a>
-  <a onclick="openLogIn()" href="#" class="help-link">Log out</a>
+  <a onclick="openHelp(event)" href="#" class="help-link">Help<img class="help-icon" src="./assets/img/help-icon.png"></a>
+  <a onclick="openLegalNotice(event)" id="navLN" class="help-link">Legal Notice</a>
+  <a onclick="openPrivacyPolicy(event)" id="navPP" class="help-link">Privacy Policy</a>
+  <a onclick="openLogIn()" class="help-link">Log out</a>
 </div>
