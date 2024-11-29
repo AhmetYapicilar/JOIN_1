@@ -128,6 +128,10 @@ function getTime() {
  * Logs in the user as a guest and redirects to the summary page.
  */
 function guestLogIn() {
+  // Setze den Benutzer explizit als "Guest" im lokalen Speicher
+  localStorage.setItem("user-name", JSON.stringify("Guest"));
+
+  // Begrüße den Gast
   document.getElementById('inhalt').innerHTML = '';
   if (window.innerWidth < 1242) {
     greetUserFirst("Guest");
